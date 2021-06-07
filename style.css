@@ -1,0 +1,153 @@
+body,p,span{
+    font-family: 'Roboto', sans-serif;
+}
+h1,h2,h3,h4,h5,h6,a{
+    font-family: 'Rubik', sans-serif;
+}
+
+/* our-primary-manu */
+/* our-primary-manu */
+.navbar{
+    background: #e0e0e0;
+    padding: 0;
+ 
+}
+.navbar-brand img{
+    width: 6rem;
+    height: auto;
+}
+
+ul.our-primary-manu li a{
+    text-decoration: none;
+    display: inline-block;
+    color: #111111;
+    font-weight: 600;
+    transition: .2s;
+    z-index: 999;
+    
+}
+ul.our-primary-manu li{
+    line-height: 4rem;
+    padding-right: 30px; 
+    
+}
+
+ul.our-primary-manu li a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 0;
+    height: 0;
+    z-index: -1;
+    transition: .5s;
+    background: #000;
+}
+ul.our-primary-manu li a:hover:after{
+    width: 60%;
+    height: 2px;
+}
+
+
+/* dropdwon-manu */
+/* dropdwon-manu */
+ul.our-primary-manu li{
+    position: relative;
+}
+ul.our-primary-manu li ul{
+    position: absolute;
+    width: 13.75rem;
+    left: 0;
+    top: 160%;
+    background: #fafafa;
+    list-style: none;
+    padding: .8rem;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .4s ease-in-out;
+    box-shadow: 0 0 15px 0 rgba(0,0,0,0.1);
+
+}
+ul.our-primary-manu li ul li{
+    flex-direction: column;
+    line-height: 2rem;
+}
+ul.our-primary-manu li:hover ul{
+    visibility: visible;
+    opacity: 1;
+    top: 100%;
+}
+ul.our-primary-manu li ul li{
+    transition: .5s;
+    background-color: #3763EB;
+    display: block;
+    color: #fff;
+}
+ul.our-primary-manu li ul li a{
+    font-size: 1.2rem;
+}
+ul.our-primary-manu li ul li a:hover{
+    letter-spacing: 1px;
+    transform: translateX(5px);
+}
+
+
+
+.button-top{
+    text-align: left;
+}
+.button-top a {
+	display: inline-block;
+	padding: .7rem 2rem;
+	transition: .4s;
+	position: relative;
+	background-color: #fff;
+	color: #111;
+	border-radius: 3rem;
+}
+
+
+
+/* slider-section */
+/* slider-section */
+.slider-section {
+    overflow: hidden;
+
+}
+.slider-section .slidee-content {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.slider-section .slidee-content h1{
+
+    font-size: 3rem;
+    margin-top: 10px;
+    margin-bottom: 16px;
+}
+.slider-section .slidee-content p{
+   
+    color: #606060;
+    font-weight: 400;
+}
+.slider-section a {
+	padding: .8rem 2rem;
+	border-radius: 2rem;
+	font-size: 1.2rem;
+}
+.slider-section .img-s{
+    position: relative;
+    padding: 18rem;
+    
+}
+.slider-section .img-s img{
+
+	height: 800px;
+    width: 750px;
+	border-radius: 50%;
+	position: absolute;
+    top: -200px;
+    left: 10px;
+
+}
